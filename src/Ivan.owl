@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#"
+     xml:base="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:version_2="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#защищает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#защищает">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#прикреплен_к_кафедре -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#прикреплен_к_кафедре">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#проходит -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#проходит">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#рецензирует -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#рецензирует">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Рецензент"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#руководит -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#руководит">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_практики"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#согласовывает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#согласовывает">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_ВКР"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Год_прохождения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Год_прохождения">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Должность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Должность">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Заведующий_кафедры -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Заведующий_кафедры">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Место_прохождения_практики -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Место_прохождения_практики">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Номер_группы -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Номер_группы">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Приказ_на_прохождение_практики -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Приказ_на_прохождение_практики">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Профиль_обучения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Профиль_обучения">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Тема -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Тема">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ФИО -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ФИО">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Рецензент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Рецензент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_ВКР -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_ВКР"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_практики -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_практики"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#дискретного_анализа_и_исследования_операций -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#дискретного_анализа_и_исследования_операций">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#компьютерных_систем -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#компьютерных_систем">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#компьютерных_технологий -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#компьютерных_технологий">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#математики -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#математики">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#общей_информатики -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#общей_информатики">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#от_НГУ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#от_НГУ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_практики"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#от_профильной_организации -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#от_профильной_организации">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_практики"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#параллельных_вычислений -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#параллельных_вычислений">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Кафедра"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР"/>
+        <Тема rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Разработка интеллектуального помощника секретаря кафедры</Тема>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#КОИ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#КОИ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#общей_информатики"/>
+        <Заведующий_кафедры rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пальчунов Дмитрий Евгеньевич</Заведующий_кафедры>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_5"/>
+        <Год_прохождения rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</Год_прохождения>
+        <Место_прохождения_практики rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ФГБУН Институт математики им. С.Л. Соболева СО РАН. 630090, г. Новосибирск, пр. Академика Коптюга, 4.</Место_прохождения_практики>
+        <Приказ_на_прохождение_практики rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-3-248-2</Приказ_на_прохождение_практики>
+        <Тема rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Цифровой двойник</Тема>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Семестр_5"/>
+        <Год_прохождения rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</Год_прохождения>
+        <Приказ_на_прохождение_практики rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8765ува876</Приказ_на_прохождение_практики>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Рецензент_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Рецензент_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Рецензент"/>
+        <рецензирует rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР_1"/>
+        <ФИО rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Иванов Иван Иванович</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_ВКР_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_ВКР_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_ВКР"/>
+        <согласовывает rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР_1"/>
+        <Должность rdf:datatype="http://www.w3.org/2001/XMLSchema#string">д.ф.-м.н., заведующий КОИ ФИТ</Должность>
+        <ФИО rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пальчунов Дмитрий Евгеньевич</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_от_НГУ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_от_НГУ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#от_НГУ"/>
+        <руководит rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_1"/>
+        <Должность rdf:datatype="http://www.w3.org/2001/XMLSchema#string">заведующий кафедрой общей информатики ФИТ, д.ф.-м.н.</Должность>
+        <ФИО rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пальчунов Дмитрий Евгеньевич</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_от_профильной_организации_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Руководитель_от_профильной_организации_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#от_профильной_организации"/>
+        <руководит rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_1"/>
+        <Должность rdf:datatype="http://www.w3.org/2001/XMLSchema#string">в.н.с., д.ф.-м.н.</Должность>
+        <ФИО rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пальчунов Дмитрий Евгеньевич</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент"/>
+        <защищает rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#ВКР_1"/>
+        <проходит rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_1"/>
+        <Номер_группы rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18205</Номер_группы>
+        <Профиль_обучения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Программная инженерия и компьютерные науки</Профиль_обучения>
+        <ФИО rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Олейник Алина Олеговна</ФИО>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Студент"/>
+        <проходит rdf:resource="http://www.semanticweb.org/oleyn/ontologies/2022/4/version_2#Практика_5_2"/>
+        <ФИО rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Иванова Ирина Ивановна</ФИО>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
